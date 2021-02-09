@@ -1,0 +1,11 @@
+.resume-upload {
+    position: relative;
+    .tab-right {
+        position: absolute;
+        right: 0;
+        z-index: 10;
+        p {
+            display: inline-block;
+        }
+    }
+}

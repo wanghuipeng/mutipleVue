@@ -1,0 +1,1268 @@
+        .analyse-resume {
+            background: #f9f9f9;
+            height: 100%;
+            .el-date-editor.el-input,
+            .el-date-editor.el-input__inner {
+                width: 190px;
+            }
+            .resume-detail {
+                background: #fff;
+            }
+            .workExp {
+                .edit-form {
+                    .diy-select {
+                        .el-icon-caret-bottom {
+                            right: -32px;
+                            top: 6px;
+                        }
+                        .el-icon-circle-close {
+                            right: -40px;
+                            top: 6px;
+                        }
+                    }
+                }
+            }
+            .workExp,
+            .eduExp {
+                .part-1 {
+                    position: relative;
+                    span {
+                        &:first-child {
+                            max-width: 200px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            display: inline-block;
+                        }
+                        &:last-child {
+                            position: absolute;
+                            left: 266px;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+            .projectExp,
+            .workExp,
+            .certInfo {
+                .el-form-item__content {
+                    position: initial !important;
+                }
+                .text-form {
+                    .el-form-item__content {
+                        width: 500px !important;
+                        white-space: pre-line;
+                    }
+                }
+                .edit-form {
+                    .el-form-item__content {
+                        width: initial !important;
+                    }
+                }
+                .cont-1 {
+                    .name {
+                        max-width: 200px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        display: inline-block;
+                    }
+                    .time {
+                        position: absolute;
+                        left: 240px;
+                    }
+                }
+            }
+            .salary-group {
+                .cheng {
+                    color: #4d4d4d;
+                    font-size: 19px;
+                    position: absolute;
+                    top: -8px;
+                    left: 122px;
+                }
+                .el-input-group {
+                    width: 115px;
+                    margin-right: 24px;
+                    &.last {
+                        margin-right: 0;
+                        width: 75px !important;
+                        input {
+                            width: 45px !important;
+                        }
+                    }
+                    input {
+                        width: 70px !important;
+                        padding: 0 7px !important;
+                    }
+                    .el-input-group__append {
+                        padding: 0 5px !important;
+                    }
+                }
+                .el-radio-group {
+                    overflow: hidden;
+                    height: 26px !important;
+                    label {
+                        overflow: hidden;
+                    }
+                    .el-radio__label {
+                        padding-left: 5px !important;
+                    }
+                    .el-radio {
+                        margin-right: 10px !important;
+                    }
+                }
+                .result-num {
+                    color: #4d4d4d;
+                    height: 28px;
+                    line-height: 28px;
+                    margin-left: 7px;
+                }
+            }
+            .origin-text {
+                width: 100%;
+                height: 100%;
+                font-size: 14px;
+                border: none;
+                line-height: 22px;
+                background-color: transparent;
+                outline: none;
+            }
+            .email-link {
+                color: #1678f9;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline
+                }
+            }
+            .base-info .edit-form .el-date-editor .el-input__prefix {
+                left: inherit;
+            }
+            .text-form {
+                &.disabled {
+                    position: relative;
+                    &::before {
+                        content: " ";
+                        position: absolute;
+                        left: 0;
+                        top: 0px;
+                        width: 101%;
+                        height: 103%;
+                        background: #f9f9f9;
+                        opacity: 0.65;
+                        z-index: 20;
+                    }
+                }
+            }
+            .disabled {
+                position: relative;
+                &::before {
+                    content: " ";
+                    position: absolute;
+                    left: 0;
+                    top: 0px;
+                    width: 101%;
+                    height: 100%;
+                    background: #f9f9f9;
+                    opacity: 0.65;
+                    z-index: 20;
+                }
+            }
+            .add-btn-disabled {
+                position: relative;
+                &::before {
+                    content: " ";
+                    position: absolute;
+                    left: -1px;
+                    top: -1px;
+                    width: 101%;
+                    height: auto;
+                    background: #f9f9f9;
+                    opacity: 0.65;
+                    z-index: 20;
+                }
+            }
+            .edit-disabled {
+                opacity: 0.65;
+                cursor: default !important;
+            }
+            .disabled-h3 {
+                position: relative;
+                &::before {
+                    content: " ";
+                    position: absolute;
+                    left: -1px;
+                    top: -1px;
+                    width: 101%;
+                    height: auto;
+                    background: #f9f9f9;
+                    opacity: 0.65;
+                    z-index: 20;
+                }
+            }
+            .dot-i {
+                width: 3px;
+                height: 3px;
+                display: inline-block;
+                background-color: #eee;
+                margin: 0 8px;
+                border-radius: 10px;
+                vertical-align: 3px;
+            }
+            .fixed-btn {
+                position: fixed;
+                bottom: 72px;
+                z-index: 100;
+                left: 50%;
+                margin-left: -45px;
+                width: 180px;
+                height: 48px;
+                border-radius: 26px;
+                background-color: #1678f9;
+                font-size: 20px;
+                font-weight: 600;
+                box-shadow: 2px 4px 20px 0px rgba(22, 120, 249, 0.3);
+            }
+            .nav {
+                width: 100%;
+                height: 44px;
+                line-height: 44px;
+                background-color: #fff;
+                padding: 0 19px;
+                box-sizing: border-box;
+                border-radius: 8px;
+                display: flex;
+                justify-content: space-around;
+                li {
+                    display: inline-block;
+                    cursor: pointer;
+                    color: #4d4d4d;
+                    font-size: 16px;
+                    height: 44px;
+                    line-height: 44px;
+                    span {
+                        height: 44px;
+                        line-height: 44px;
+                    }
+                    &.current {
+                        span {
+                            color: #1678f9;
+                            position: relative;
+                            font-weight: 600;
+                            display: inline-block;
+                            &::after {
+                                content: '';
+                                height: 2px;
+                                width: 30px;
+                                display: inline-block;
+                                background-color: #1678f9;
+                                position: absolute;
+                                left: 50%;
+                                margin-left: -15px;
+                                bottom: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+            .resume-cont {
+                width: 100%;
+                margin-top: 10px;
+                height: calc(100% - 60px);
+                overflow: hidden;
+                .left-cont {
+                    border-radius: 8px;
+                    box-sizing: border-box;
+                    height: 100%;
+                    width: 50%;
+                    background-color: #fff;
+                    float: left;
+                    overflow: auto;
+                    .info-title {
+                        font-size: 30px;
+                        margin: 0;
+                    }
+                    .basic-info,
+                    .apply-intent,
+                    .edu-exp,
+                    .work-exp,
+                    .project-exp,
+                    .train-exp,
+                    .lang-power,
+                    .certify-info,
+                    .self-eval,
+                    .append-info,
+                    .my-prod {
+                        min-height: 200px;
+                    }
+                    // 重置必填提示*
+                    .el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap>.el-form-item__label:before,
+                    .el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:before {
+                        left: -10px;
+                        color: #ff5d1e;
+                        position: absolute;
+                    }
+                    .min-h-380 {
+                        min-height: 380px !important;
+                    }
+                    .min-h-690 {
+                        min-height: 690px !important;
+                    }
+                    .min-h-1160 {
+                        min-height: 1160px !important;
+                    }
+                    .jobIntent {
+                        .diy-select {
+                            .el-icon-caret-bottom {
+                                right: 8px !important;
+                            }
+                            .el-icon-circle-close {
+                                right: 5px !important;
+                            }
+                        }
+                    }
+                    .edit-form {
+                        padding-left: 10px;
+                        .diy-select {
+                            width: 200px;
+                        }
+                        .btns {
+                            width: 100% !important;
+                            margin-top: 20px;
+                            text-align: center;
+                            padding: 0;
+                            button {
+                                margin: 0 9px;
+                                border-radius: 4px;
+                                font-size: 16px;
+                                height: 30px;
+                                width: 80px;
+                                padding: 0;
+                                &.el-button--default {
+                                    color: #1678f9;
+                                    border: 1px solid rgba(22, 120, 249, 1);
+                                }
+                                &.el-button--primary {
+                                    background: rgba(22, 120, 249, 1);
+                                    border-radius: 4px;
+                                }
+                            }
+                        }
+                        .el-form-item {
+                            width: 48%;
+                            margin-bottom: 20px;
+                        }
+                        .el-form-item__label {
+                            line-height: 28px;
+                            text-align: left;
+                            color: #4d4d4d;
+                            position: relative;
+                        }
+                        .el-radio-group {
+                            height: 22px;
+                            margin-top: 5px;
+                            overflow: hidden;
+                            .el-radio {
+                                margin-right: 20px;
+                                overflow: hidden;
+                            }
+                            .el-radio__input.is-checked {
+                                border: 3px solid #1678f9;
+                                border-radius: 100%;
+                                .el-radio__inner {
+                                    width: 12px;
+                                    height: 12px;
+                                }
+                            }
+                            .el-radio__inner {
+                                border-color: #eee;
+                                width: 18px;
+                                height: 18px;
+                            }
+                            .el-radio__input.is-checked .el-radio__inner {
+                                border-color: #fff;
+                                background: #fff;
+                                border-radius: 100%;
+                            }
+                            .el-radio__inner::after {
+                                background-color: #1678f9;
+                                border-radius: 6px;
+                                width: 6px;
+                                height: 6px;
+                            }
+                            .el-radio__label {
+                                font-size: 14px;
+                                color: #4d4d4d;
+                                vertical-align: middle;
+                            }
+                        }
+                        .el-input__suffix {
+                            top: 7px;
+                            right: 11px;
+                            .el-icon-arrow-up {
+                                transition: transform 0.3s;
+                                transform: rotate(0deg);
+                                background: url('~@/assets/images/common/arrow.png') no-repeat;
+                                background-size: 9px;
+                                width: 10px;
+                                height: 16px;
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .el-input {
+                            height: 28px;
+                            background-color: transparent;
+                            &.w-100 {
+                                .el-input__inner {
+                                    width: 100px;
+                                }
+                            }
+                            .el-input__inner {
+                                padding: 0 12px;
+                                width: 200px;
+                                height: 28px;
+                                line-height: 28px;
+                                background-color: transparent;
+                                color: #4d4d4d;
+                                font-size: 14px;
+                                border-color: #e5e5e5;
+                            }
+                        }
+                        .el-textarea {
+                            .el-input__count {
+                                background-color: transparent;
+                            }
+                            .el-textarea__inner {
+                                width: 494px;
+                                resize: none;
+                                padding: 0 12px;
+                                line-height: 28px;
+                                background-color: transparent;
+                                color: #4d4d4d;
+                                font-size: 14px;
+                                border-color: #e5e5e5;
+                            }
+                            .el-input__count {
+                                bottom: -20px;
+                                right: 0;
+                            }
+                        }
+                    }
+                    .jobIntent,
+                    .eduExp,
+                    .workExp,
+                    .projectExp,
+                    .trainExp,
+                    .langPower,
+                    .certInfo,
+                    .selfEval,
+                    .surplusInfo,
+                    .myProduct {
+                        .edit-form {
+                            .el-form-item {
+                                width: 100%;
+                                margin-right: 0;
+                                input {
+                                    // width: 644px;
+                                }
+                                .diy-select {
+                                    //  width: 644px;
+                                }
+                            }
+                        }
+                    }
+                    .certInfo {
+                        .edit-form {
+                            .el-form-item {
+                                margin-bottom: 20px;
+                                &.start-date {
+                                    display: inline-block;
+                                    width: 350px;
+                                    position: relative;
+                                    &::after {
+                                        content: '';
+                                        width: 14px;
+                                        height: 1px;
+                                        background-color: #4d4d4d;
+                                        position: absolute;
+                                        display: inline-block;
+                                        top: 13px;
+                                        right: 18px;
+                                    }
+                                    input {
+                                        width: 200px;
+                                    }
+                                }
+                                &.end-date {
+                                    display: inline-block;
+                                    width: 350px;
+                                    position: relative;
+                                    input {
+                                        width: 200px;
+                                    }
+                                }
+                                .el-date-editor {
+                                    .el-input__prefix {
+                                        right: 41px !important;
+                                        left: inherit;
+                                        top: -6px;
+                                    }
+                                }
+                            }
+                        }
+                        .text-form {
+                            .item {
+                                // max-height: 325px;
+                            }
+                        }
+                    }
+                    .langPower,
+                    .selfEval,
+                    .myProduct {
+                        .edit-form {
+                            .el-form-item {
+                                margin-bottom: 20px;
+                                &.start-date {
+                                    display: inline-block;
+                                    width: 350px;
+                                    position: relative;
+                                    &::after {
+                                        content: '';
+                                        width: 14px;
+                                        height: 1px;
+                                        background-color: #4d4d4d;
+                                        position: absolute;
+                                        display: inline-block;
+                                        top: 13px;
+                                        right: 18px;
+                                    }
+                                    input {
+                                        width: 200px;
+                                    }
+                                }
+                                &.end-date {
+                                    display: inline-block;
+                                    width: 350px;
+                                    position: relative;
+                                    input {
+                                        width: 200px;
+                                    }
+                                }
+                                .el-date-editor {
+                                    .el-input__prefix {
+                                        right: 40px;
+                                        left: inherit;
+                                        top: -6px;
+                                    }
+                                }
+                            }
+                        }
+                        .text-form {
+                            .item {
+                                // max-height: 325px;
+                            }
+                        }
+                    }
+                    .trainExp,
+                    .workExp,
+                    .projectExp,
+                    .eduExp {
+                        .edit-form {
+                            .el-form-item {
+                                margin-bottom: 20px;
+                                &.start-date {
+                                    display: inline-block;
+                                    width: 350px;
+                                    position: relative;
+                                    &::after {
+                                        content: '';
+                                        width: 14px;
+                                        height: 1px;
+                                        background-color: #4d4d4d;
+                                        position: absolute;
+                                        display: inline-block;
+                                        top: 13px;
+                                        right: 18px;
+                                    }
+                                    input {
+                                        width: 200px;
+                                    }
+                                }
+                                &.end-date {
+                                    display: inline-block;
+                                    width: 350px;
+                                    position: relative;
+                                    input {
+                                        width: 200px;
+                                    }
+                                }
+                                .el-date-editor {
+                                    .el-input__prefix {
+                                        right: 41px !important;
+                                        left: inherit;
+                                        top: -6px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .certInfo {
+                        .el-form-item {
+                            &.start-date {
+                                display: inline-block;
+                                width: 350px;
+                                position: relative;
+                                &::after {
+                                    display: none !important;
+                                }
+                                input {
+                                    width: 200px;
+                                }
+                            }
+                        }
+                    }
+                    .selfEval,
+                    .surplusInfo {
+                        .el-form-item__label {
+                            width: 80px !important;
+                            margin-right: 8px;
+                            text-align: right !important;
+                            margin-left: -24px;
+                            text-align: right !important;
+                        }
+                        .el-textarea__inner {
+                            width: 519px !important;
+                        }
+                    }
+                    .workExp {
+                        .diy-select {
+                            width: 450px;
+                        }
+                        .text-suffix {
+                            .el-input__suffix {
+                                top: 3px;
+                            }
+                        }
+                    }
+                    .myProduct {
+                        .product-url {
+                            .el-input-group__prepend {
+                                background-color: transparent;
+                                border-right: 0;
+                                padding: 0 12px;
+                            }
+                            .el-input__inner {
+                                width: 594px !important;
+                            }
+                        }
+                        .upload-file {
+                            button {
+                                font-size: 16px;
+                                border-radius: 4px;
+                                width: 134px;
+                                height: 30px;
+                            }
+                            .tip {
+                                font-size: 14px;
+                                color: #4d4d4d;
+                            }
+                        }
+                    }
+                    .header {
+                        height: 30px;
+                        line-height: 30px;
+                        margin-bottom: 15px;
+                        .left-part {
+                            float: left;
+                            span {
+                                font-size: 14px;
+                                color: #989898;
+                                margin-right: 40px;
+                            }
+                        }
+                        .right-part {
+                            float: right;
+                            .el-input__inner {
+                                padding-right: 20px;
+                            }
+                            .el-select__caret {
+                                transform: none;
+                                position: relative;
+                                &::before {
+                                    content: '';
+                                    display: inline-block;
+                                    background: url('~@/assets/images/resume/arrow.png') no-repeat;
+                                    background-size: 7px;
+                                    width: 7px;
+                                    height: 12px;
+                                    vertical-align: middle;
+                                }
+                            }
+                            .el-input__inner {
+                                border-color: #1678f9;
+                                width: 100px;
+                                height: 30px;
+                                border-radius: 15px;
+                                font-size: 14px;
+                                color: #1678f9;
+                            }
+                            button {
+                                border-radius: 15px;
+                                margin-left: 20px;
+                                border-color: #1678f9;
+                                font-size: 14px;
+                                width: 100px;
+                                height: 30px;
+                            }
+                        }
+                    }
+                    .labels {
+                        clear: both;
+                        span {
+                            border: 1px solid #1678f9;
+                            font-size: 12px;
+                            color: #1678f9;
+                            padding: 0 4px;
+                            height: 17px;
+                            line-height: 17px;
+                            margin-right: 20px;
+                            &.add-labels {
+                                color: #ea2b3f;
+                                border-color: #ea2b3f;
+                            }
+                        }
+                    }
+                    .base-info {
+                        background-color: #fff;
+                        padding: 20px 0px 5px 0px;
+                        box-sizing: border-box;
+                        h3 {
+                            margin-bottom: 20px;
+                            color: #333333;
+                            font-size: 16px;
+                            font-weight: 600;
+                            position: relative;
+                            .edit {
+                                cursor: pointer;
+                                color: #808080;
+                                font-size: 14px;
+                                font-weight: normal;
+                                position: absolute;
+                                right: 0;
+                                &::before {
+                                    content: '';
+                                    width: 16px;
+                                    height: 16px;
+                                    display: inline-block;
+                                    background: url('~@/assets/images/resume/icon_edit.png') no-repeat;
+                                    background-size: 16px;
+                                    vertical-align: -3px;
+                                    margin-right: 3px;
+                                }
+                            }
+                        }
+                    }
+                    .edit-form {
+                        .el-form-item {
+                            &.mini-orange-dot {
+                                .el-form-item__label {
+                                    position: relative;
+                                    &::before {
+                                        color: #FF5D1E;
+                                        content: "*";
+                                        font-size: 14px;
+                                        display: inline-block;
+                                        position: absolute;
+                                        left: -10px;
+                                        top: -2px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .text-form {
+                        position: relative;
+                        margin-bottom: 20px;
+                        .avatar {
+                            width: 40px;
+                            height: 40px;
+                            background-color: transparent;
+                            border-radius: 100%;
+                            display: inline-block;
+                            position: absolute;
+                        }
+                        .el-form-item {
+                            font-size: 14px;
+                            color: #4d4d4d;
+                            margin-bottom: 5px;
+                            padding-left: 10px;
+                            width: 45%;
+                            &.mini-orange-dot {
+                                .el-form-item__label {
+                                    color: #FF5D1E;
+                                    position: relative;
+                                    &::before {
+                                        content: "*";
+                                        font-size: 14px;
+                                        display: inline-block;
+                                        position: absolute;
+                                        left: -10px;
+                                        top: -2px;
+                                    }
+                                    &::after {
+                                        content: "\5fc5\586b\9879";
+                                        font-size: 14px;
+                                        width: 100px;
+                                        display: inline-block;
+                                        position: absolute;
+                                        left: 71px;
+                                        top: -1px;
+                                    }
+                                }
+                                &.no-text {
+                                    .el-form-item__label {
+                                        color: #4d4d4d;
+                                        &::before {
+                                            color: #FF5D1E;
+                                        }
+                                        &::after {
+                                            content: "";
+                                        }
+                                    }
+                                }
+                            }
+                            .el-form-item__label {
+                                text-align: left;
+                                font-size: 14px;
+                                color: #4d4d4d;
+                            }
+                        }
+                        .pl {
+                            padding-left: 80px;
+                            display: inline-block;
+                        }
+                    }
+                    .workExp,
+                    .jobIntent,
+                    .projectExp,
+                    .certInfo {
+                        .el-form-item {
+                            width: 100%;
+                            &.mini-orange-dot {
+                                .el-form-item__label {
+                                    &::after {
+                                        left: 89px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .resume-mess {
+                        border-radius: 8px;
+                        background-color: #fff;
+                        padding: 20px;
+                        overflow-x: hidden;
+                        box-sizing: border-box;
+                        &>div {
+                            border-bottom: 1px solid #eee;
+                            margin-bottom: 25px;
+                            &:last-child {
+                                border-bottom: none;
+                                margin-bottom: 0px;
+                            }
+                        }
+                        .add-btn {
+                            border: 1px dashed #1678f9;
+                            border-radius: 1px;
+                            height: 42px;
+                            line-height: 42px;
+                            color: #1678f9;
+                            font-size: 16px;
+                            text-align: center;
+                            margin-bottom: 39px;
+                            margin-top: 20px;
+                            cursor: pointer;
+                        }
+                        .eduExp {
+                            .add-btn {
+                                margin-top: 60px;
+                            }
+                        }
+                        h3 {
+                            margin-bottom: 20px;
+                            padding-top: 15px;
+                            color: #333333;
+                            font-size: 16px;
+                            font-weight: 600;
+                            position: relative;
+                            .edit {
+                                cursor: pointer;
+                                color: #808080;
+                                font-size: 14px;
+                                font-weight: normal;
+                                position: absolute;
+                                right: 0;
+                                &::before {
+                                    content: '';
+                                    width: 16px;
+                                    height: 16px;
+                                    display: inline-block;
+                                    background: url('~@/assets/images/resume/icon_edit.png') no-repeat;
+                                    background-size: 16px;
+                                    vertical-align: -3px;
+                                    margin-right: 3px;
+                                }
+                            }
+                        }
+                        .certInfo {
+                            .item-inner {
+                                .edit {
+                                    cursor: pointer;
+                                    color: #808080;
+                                    font-size: 14px;
+                                    position: absolute;
+                                    right: 0;
+                                    &::before {
+                                        content: '';
+                                        width: 16px;
+                                        height: 16px;
+                                        display: inline-block;
+                                        background: url('~@/assets/images/resume/icon_edit.png') no-repeat;
+                                        background-size: 16px;
+                                        vertical-align: -3px;
+                                        margin-right: 3px;
+                                    }
+                                }
+                            }
+                        }
+                        .eduExp,
+                        .workExp,
+                        .projectExp,
+                        .trainExp,
+                        .langPower,
+                        .certInfo,
+                        .surplusInfo,
+                        .myProduct {
+                            .text-form {
+                                li,
+                                .item {
+                                    padding: 20px 0 0 0;
+                                    width: auto;
+                                    background-color: transparent;
+                                    border-radius: 0;
+                                    border: none;
+                                    border-bottom: 1px dashed #eee;
+                                    position: relative;
+                                    margin-bottom: 0;
+                                    line-height: 22px;
+                                    &:last-child {
+                                        border-bottom: none;
+                                    }
+                                    .avatar {
+                                        width: 48px;
+                                        height: 48px;
+                                    }
+                                    .edit {
+                                        cursor: pointer;
+                                        color: #808080;
+                                        font-size: 14px;
+                                        position: absolute;
+                                        right: 0;
+                                        &::before {
+                                            content: '';
+                                            width: 16px;
+                                            height: 16px;
+                                            display: inline-block;
+                                            background: url('~@/assets/images/resume/icon_edit.png') no-repeat;
+                                            background-size: 16px;
+                                            vertical-align: -3px;
+                                            margin-right: 3px;
+                                        }
+                                    }
+                                    .cont {
+                                        padding-left: 75px;
+                                        .part-1,
+                                        .part-2 {
+                                            font-size: 14px;
+                                            margin: 4px 0;
+                                            color: #4d4d4d;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .workExp,
+                    .projectExp,
+                    .trainExp,
+                    .langPower,
+                    .certInfo,
+                    .selfEval,
+                    .surplusInfo,
+                    .myProduct {
+                        .cont-1 {
+                            padding-left: 75px;
+                            color: #4d4d4d;
+                            font-size: 14px;
+                            .part-1,
+                            .part-2 {
+                                font-size: 14px;
+                                margin: 4px 0;
+                                color: #4d4d4d;
+                                height: 22px;
+                            }
+                        }
+                        .cont-2 {
+                            margin-top: 20px;
+                            li {
+                                border: none !important;
+                                padding: 10px 0 !important;
+                            }
+                            label {
+                                color: #4d4d4d;
+                                font-size: 14px;
+                                display: inline-block;
+                                vertical-align: top;
+                                margin-right: 20px;
+                                width: 56px;
+                            }
+                            span {
+                                display: inline-block;
+                                font-size: 14px;
+                                color: #4d4d4d;
+                                width: 505px;
+                            }
+                        }
+                    }
+                    .projectExp,
+                    .trainExp,
+                    .langPower,
+                    .certInfo,
+                    .selfEval,
+                    .surplusInfo,
+                    .myProduct {
+                        .cont-1 {
+                            padding-left: 0 !important;
+                            position: relative;
+                            span:first-child {
+                                margin-right: 156px;
+                                word-break: break-all;
+                                white-space: pre-line;
+                            }
+                            .edit {
+                                cursor: pointer;
+                                color: #808080;
+                                font-size: 14px;
+                                position: absolute;
+                                right: 0;
+                                &::before {
+                                    content: '';
+                                    width: 16px;
+                                    height: 16px;
+                                    display: inline-block;
+                                    background: url('~@/assets/images/resume/icon_edit.png') no-repeat;
+                                    background-size: 16px;
+                                    vertical-align: -3px;
+                                    margin-right: 3px;
+                                }
+                            }
+                        }
+                    }
+                    .projectExp,
+                    .trainExp,
+                    .langPower,
+                    .certInfo,
+                    .selfEval,
+                    .surplusInfo,
+                    .myProduct {
+                        .text-form {
+                            margin-bottom: 20px;
+                            &:first-child {
+                                margin-bottom: 0;
+                            }
+                            .cont-2 {
+                                padding-bottom: 20px;
+                            }
+                            .item-inner {
+                                padding-top: 20px;
+                                border-bottom: 1px dashed #eee;
+                                &:last-child {
+                                    border: none;
+                                }
+                                &:first-child {
+                                    padding-top: 0px;
+                                }
+                            }
+                        }
+                    }
+                    .trainExp {
+                        .cont-2 {
+                            padding-bottom: 0 !important;
+                        }
+                    }
+                    .langPower {
+                        .cont-1 {
+                            padding-bottom: 20px;
+                        }
+                    }
+                    .certInfo {
+                        .cont-2 {
+                            margin-top: 10px;
+                        }
+                    }
+                    .myProduct {
+                        .text-form {
+                            margin-bottom: 0;
+                            .cont-2 {
+                                li {
+                                    span {
+                                        color: #1678f9;
+                                    }
+                                    .btns {
+                                        position: absolute;
+                                        right: 0;
+                                        top: 0;
+                                        span {
+                                            width: auto;
+                                            color: #808080;
+                                            margin-left: 20px;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                }
+                            }
+                            .download {
+                                &::before {
+                                    content: '';
+                                    display: inline-block;
+                                    background: url('~@/assets/images/resume/icon_download.png') no-repeat;
+                                    background-size: 16px;
+                                    width: 16px;
+                                    height: 16px;
+                                    vertical-align: -2px;
+                                    margin-right: 3px;
+                                }
+                            }
+                            .delete {
+                                &::before {
+                                    content: '';
+                                    display: inline-block;
+                                    background: url('~@/assets/images/resume/icon_delete.png') no-repeat;
+                                    background-size: 16px;
+                                    width: 16px;
+                                    height: 16px;
+                                    vertical-align: -2px;
+                                    margin-right: 3px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .right-cont {
+                    background-color: #fff;
+                    height: calc(100%);
+                    overflow-y: auto;
+                    width: 50%;
+                    float: right;
+                    border-radius: 8px;
+                    padding: 10px 20px;
+                    box-sizing: border-box;
+                    .el-tabs__header {
+                        .el-tabs__nav-wrap::after {
+                            height: 1px;
+                            background-color: #eee;
+                        }
+                        .el-tabs__item {
+                            font-size: 16px;
+                        }
+                        .el-tabs__item.is-active {
+                            color: #1678f9;
+                            font-weight: 600;
+                        }
+                        .el-tabs__item:hover {
+                            color: #1678f9;
+                            font-weight: 600;
+                        }
+                        .el-tabs__active-bar {
+                            background-color: #1678f9;
+                        }
+                    }
+                    .el-tab-pane {
+                        img {
+                            width: 500px;
+                        }
+                    }
+                }
+            }
+            // 简历解析样式重塑
+            .base-info {
+                border-radius: 0;
+                .text-overflow-200 .el-form-item__content {
+                    width: 130px;
+                }
+                .el-form-item__label {
+                    padding-right: 8px;
+                    width: 70px !important;
+                }
+                .diy-select {
+                    width: 170px !important;
+                }
+                .el-input .el-input__inner {
+                    padding: 0 8px !important;
+                    width: 170px !important;
+                }
+                .el-radio-group {
+                    display: block;
+                    margin-top: 14px;
+                    margin-left: 0;
+                }
+                .el-form {
+                    .el-form-item:first-child {
+                        // width: 265px;
+                    }
+                }
+            }
+            .resume-mess {
+                padding: 0 !important;
+            }
+            .jobIntent .edit-form .el-form-item input,
+            .diy-select,
+            .eduExp .edit-form .el-form-item .diy-select,
+            .workExp .edit-form .el-form-item input,
+            .diy-select,
+            .projectExp .edit-form .el-form-item input,
+            .diy-select,
+            .trainExp .edit-form .el-form-item input,
+            .diy-select,
+            .langPower .edit-form .el-form-item input,
+            .diy-select,
+            .certInfo .edit-form .el-form-item input,
+            .diy-select,
+            .selfEval .edit-form .el-form-item input,
+            .diy-select,
+            .myProduct .edit-form .el-form-item input,
+            .diy-select,
+            .el-textarea__inner {
+                width: 450px;
+            }
+            .eduExp .edit-form .el-form-item,
+            .workExp .edit-form .el-form-item,
+            .projectExp .edit-form .el-form-item,
+            .trainExp .edit-form .el-form-item,
+            .certInfo .edit-form .el-form-item {
+                &.start-date {
+                    width: 300px !important;
+                }
+                &.end-date {
+                    width: 200px !important;
+                }
+                .el-date-editor.el-input input {
+                    width: 150px !important;
+                }
+                .el-input input {
+                    width: 494px !important;
+                }
+            }
+        }

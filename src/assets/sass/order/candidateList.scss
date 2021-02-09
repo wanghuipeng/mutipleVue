@@ -1,0 +1,247 @@
+.candidateList {
+  background: #ffffff;
+  padding: 16px;
+  .search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .el-input {
+      width: 300px;
+      .el-icon-search {
+        cursor: pointer;
+      }
+    }
+    .dropdown {
+      font-size: 12px;
+      line-height: 26px;
+      color: #1678F9;
+      border-radius: 3px;
+      border: 1px solid #1678F9;
+      padding: 0 15px;
+      margin-left: auto;
+    }
+    .btn {
+      margin-left: 10px;
+      color: #1678F9;
+      border: 1px solid #1678F9;
+    }
+  }
+  .step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 2px;
+    margin-top: 24px;
+    width: 100%;
+    font-size: 13px;
+    padding-bottom: 1px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    li {
+      flex: 1;
+      text-align: center;
+      line-height: 28px;
+      color: #2E3033;
+      background: #F0F1F2;
+      margin-right: 5px;
+      position: relative;
+      cursor: pointer;
+      .before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 14px solid transparent;
+        border-bottom: 14px solid transparent;
+        border-left: 14px solid #fff;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+      .after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 14px solid transparent;
+        border-bottom: 14px solid transparent;
+        border-left: 14px solid #F0F1F2;
+        position: absolute;
+        top: 50%;
+        right: -14px;
+        transform: translateY(-50%);
+        z-index: 3;
+      }
+      &.active {
+        color: #FFFFFF;
+        background: #1678F9;
+        .after {
+          border-left: 14px solid #1678F9;
+        }
+      }
+      &:first-child {
+        .before {
+          display: none;
+        }
+      }
+      &:last-child {
+        .after {
+          display: none;
+        }
+      }
+    }
+  }
+  .batch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    p {
+      font-size: 13px;
+      color: #8D9299;
+      line-height: 18px;
+      margin-right: 25px;
+    }
+  }
+  .table {
+    &::before {
+      height: 0;
+    }
+    ::v-deep .hideCheckbox {
+      .el-checkbox {
+        display: none;
+      }
+    }
+    ::v-deep .el-table__header {
+      font-size: 12px;
+      color: #282C32;
+      font-weight: bold;
+    }
+    ::v-deep .el-table__body {
+      font-size: 12px;
+      .jobhunterName {
+        font-weight: bold;
+      }
+      .jobhunterName:hover {
+        color: #1678f9;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      .el-dropdown-link {
+        color: #1678f9;
+      }
+    }
+    ::v-deep .el-dropdown {
+      font-size: 12px;
+    }
+    ::v-deep .el-table__footer {
+      font-size: 12px;
+    }
+    ::v-deep .el-table__empty-block {
+      height: 300px!important;
+    }
+  }
+  .qrcodeDialog {
+    ::v-deep .el-dialog__header, ::v-deep .el-dialog__body {
+      padding: 0;
+    }
+    .qrcodeSetting {
+      display: flex;
+      flex-direction: row;
+      padding: 40px;
+      .qrcode {
+        width: 332px;
+        text-align: center;
+        padding-right: 38px;
+        border-right: 1px solid #DFE2E6;
+        img {
+          width: 120px;
+          height: 120px;
+          margin-bottom: 8px;
+        }
+        .name {
+          font-size: 11px;
+          color:#949699;
+          line-height: 16px;
+          margin-bottom: 28px;
+        }
+        .link {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 16px;
+          .copy {
+            margin-left: 16px;
+          }
+        }
+        .tips {
+          font-size: 13px;
+          color:#949699;
+          line-height: 18px;
+        }
+      }
+      .setting {
+        flex: 1;
+        padding-left: 40px;
+        box-sizing: border-box;
+        .title {
+          font-size: 20px;
+          line-height: 28px;
+          color: #282C32;
+          font-weight: bold;
+          margin-bottom: 28px;
+        }
+        .tips {
+          font-size: 13px;
+          color: #949699;
+          line-height: 18px;
+          margin-bottom: 16px;
+        }
+        .el-radio {
+          font-size: 13px;
+          margin-bottom: 28px;
+          ::v-deep .el-radio__label {
+            font-size: 13px;
+            color: #2E3033;
+          }
+        }
+        .el-checkbox {
+          font-size: 13px;
+          margin-bottom: 15px;
+          margin-right: 26px;
+          ::v-deep .el-checkbox__label {
+            font-size: 13px;
+            color: #2E3033;
+          }
+        }
+      }
+    }
+  }
+}
+// 佣金
+.commission {
+  border: 1px solid #EBEEF5;
+  border-radius: 4px;
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid #EBEEF5;
+    &:last-child {
+      border: 0;
+    }
+    p {
+      width: 100px;
+      line-height: 30px;
+      &:last-child {
+        flex: 1;
+        border-left: 1px solid #EBEEF5;
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

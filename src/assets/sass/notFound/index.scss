@@ -1,0 +1,14 @@
+.not-found-page {
+    .text {
+        color: #384242;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 75px;
+    }
+    .empty-page {
+        button {
+            width: 150px !important;
+            line-height: 16px !important;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.resume-page {
+    .top-part {
+        display: flex;
+        height: 64px;
+        padding: 16px;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #eee;
+        .part-left {
+            .left-title {
+                height: 27px;
+                line-height: 27px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #0D121A;
+            }
+            .left-sub {
+                font-size: 12px;
+                color: #8D9299;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+            }
+        }
+        .part-right {
+            flex: none;
+            .right-btn {
+                margin-left: 16px;
+                border-color: #1678F9;
+                color: #1678F9;
+                font-size: 13px;
+            }
+        }
+    }
+}

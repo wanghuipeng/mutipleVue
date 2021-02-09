@@ -1,0 +1,235 @@
+// 页面布局
+// 主色调
+$main-color: #1678f9;
+// 橙色
+$orange-color: #FF5D1EFF;
+// 黄色
+$yellow-color: #DAAC4F;
+// 红色
+$red-color: #EA2B3FFF;
+// 绿色
+$green-color: #14BC1BFF;
+// 灰色
+$grey-color: #818181FF;
+// 固定底部
+.isFixedFooter {
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    position: fixed !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    z-index: 999 !important;
+}
+
+// 按钮
+// 确认类型
+.confirm-btn {
+    padding: 0 15px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 2px;
+    background-color: $main-color;
+    color: #fff;
+    border-color: $main-color;
+    font-size: 14px;
+    box-sizing: content-box;
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.9;
+    }
+    &.is-disabled {
+        background-color: #FFF;
+        color: #C0C4CC;
+        border-color: #EBEEF5;
+    }
+}
+
+// 取消类型
+.cancel-btn {
+    padding: 0 15px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 2px;
+    background-color: #fff;
+    color: $main-color;
+    border-color: $main-color;
+    font-size: 14px;
+    box-sizing: content-box;
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.9;
+    }
+}
+
+// 白色类型
+.white-btn {
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    background-color: #fff;
+    color: $main-color;
+    border-color: #fff;
+    font-size: 14px;
+    box-sizing: content-box;
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+    }
+    &:active {
+        opacity: 0.9;
+    }
+    &.is-disabled {
+        background-color: #FFF;
+        color: #C0C4CC;
+        border-color: #EBEEF5;
+    }
+}
+
+//更多操作icon
+.more-operate {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    color: $main-color;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid $main-color;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+// 公共样式
+// 列表主区域布局
+.list-area {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-bottom: 40px;
+    overflow: initial;
+    .list-item {
+        .item-body {
+            position: relative;
+            overflow: auto;
+            width: 100%;
+        }
+    }
+}
+
+.empty-area {
+    text-align: center;
+    padding: 40px;
+    img {
+        width: 220px;
+        margin-bottom: 40px;
+    }
+    p {
+        line-height: 24px;
+        font-size: 14px;
+        color: #B3B3B3;
+    }
+    .el-button {
+        float: none !important;
+        margin-top: 20px;
+    }
+}
+
+.page-area {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+// 弹出面板
+.el-popover {
+    // 按钮项
+    .item {
+        .el-button--text {
+            color: #4C4C4CFF;
+            padding: 8px 0;
+        }
+    }
+    // 详细信息面板
+    .panel {
+        width: 320px;
+        .panel-body {
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+            margin-bottom: 15px;
+            .main {
+                display: flex;
+                width: 100%;
+                height: 48px;
+                margin-bottom: 12px;
+                .avatar {
+                    display: block;
+                    width: 48px;
+                    height: 48px;
+                    margin-right: 15px;
+                }
+                .info {
+                    flex: auto;
+                    .name {
+                        display: flex;
+                        justify-content: space-between;
+                        font-size: 16px;
+                        color: #323232FF;
+                        font-weight: 600;
+                        vertical-align: middle;
+                        margin-bottom: 5px;
+                        span {
+                            width: 180px;
+                        }
+                    }
+                    .des {
+                        font-size: 14px;
+                        color: #818181FF;
+                    }
+                }
+            }
+            .detail {
+                font-size: 14px;
+                color: #4D4D4DFF;
+                .phone {
+                    margin-right: 15px;
+                }
+            }
+        }
+        .panel-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.common-position-tab {
+     ::v-deep .el-tabs__item {
+        padding-right: 0;
+    }
+}
+
+.detail-link {
+    font-size: 14px;
+    color: initial;
+    margin-right: 15px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 70px;
+        height: 3px;
+        background: #fff;
+        bottom: -12px;
+        z-index: 10;
+        display: inline-block;
+    }
+}

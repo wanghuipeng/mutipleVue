@@ -1,0 +1,12 @@
+src/TIM
+src/assets/js/myCenter
+src/assets/js/resume
+src/api
+src/utils
+src/mixins
+src/router/*.js
+src/main.js
+src/demo/demo.main.js
+src/store/*
+src/views/jobfair/*.vue
+src/views/miniPortal/rightMain/personality.vue

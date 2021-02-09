@@ -1,0 +1,22 @@
+.list-visitor {
+    .el-tabs__nav-wrap::after {
+        background-color: #E4E7ED;
+        height: 1px;
+    }
+    .el-tabs__header {
+        margin-left: -16px;
+        margin-right: -16px;
+        .el-tabs__nav-wrap {
+            padding-left: 16px;
+        }
+    }
+    .visitor-detail-modal {
+        .el-dialog__body {
+            padding: 0;
+            overflow: hidden;
+        }
+        .el-dialog__header {
+            display: none;
+        }
+    }
+}

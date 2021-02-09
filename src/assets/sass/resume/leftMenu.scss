@@ -1,0 +1,208 @@
+// 左边
+.resume-page {
+    // 左侧内容
+    .left-menu {
+        width: 180px;
+        float: left;
+        .part-1,
+        .part-2 {
+            background: #fff;
+            font-size: 16px;
+            border-radius: 1px;
+            box-sizing: border-box;
+            color: #4D4D4D;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+            .title,
+            .item {
+                cursor: pointer;
+                position: relative;
+                padding-left: 50px;
+                height: 46px;
+                line-height: 46px;
+                transition: 0.3s ease-in-out;
+                &:first-child {
+                    height: 56px;
+                    line-height: 66px;
+                }
+                &:hover {
+                    background: #F7F7F7;
+                }
+                &::before {
+                    content: "";
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    position: absolute;
+                    left: 16px;
+                    top: 12px;
+                    background-size: cover;
+                    background-position: center;
+                    text-align: center;
+                }
+                &.item-all {
+                    &::before {
+                        background: url('~@/assets/images/resume/all.png') no-repeat;
+                        background-size: 20px;
+                        top: 22px;
+                    }
+                }
+                &.item-recommend {
+                    .nums {
+                        top: 17px;
+                    }
+                    &::before {
+                        background: url('~@/assets/images/resume/recommend.png') no-repeat;
+                        background-size: 20px;
+                    }
+                }
+                &.item-java {
+                    &::before {
+                        background: url('~@/assets/images/resume/java.png') no-repeat;
+                    }
+                }
+                &.item-back-end {
+                    &::before {
+                        background: url('~@/assets/images/resume/backEnd.png') no-repeat;
+                    }
+                }
+                &.item-analyze {
+                    &::before {
+                        background: url('~@/assets/images/resume/analyze.png') no-repeat;
+                    }
+                }
+                &.active {
+                    color: #1678F9;
+                    &::after {
+                        content: "";
+                        width: 8px;
+                        height: 24px;
+                        display: inline-block;
+                        background: url('~@/assets/images/order/active.png') no-repeat;
+                        background-size: 8px;
+                        position: absolute;
+                        right: 0px;
+                        top: 24px;
+                    }
+                    &.item-all {
+                        &::before {
+                            background: url('~@/assets/images/resume/all_active.png') no-repeat;
+                            background-size: 20px;
+                            top: 22px;
+                        }
+                    }
+                    &.item-recommend {
+                        &::before {
+                            background: url('~@/assets/images/resume/recommend_active.png') no-repeat;
+                            background-size: 20px;
+                        }
+                        &::after {
+                            top: 13px;
+                        }
+                    }
+                    &.item-java {
+                        &::before {
+                            background: url('~@/assets/images/resume/java_active.png') no-repeat;
+                        }
+                    }
+                    &.item-back-end {
+                        &::before {
+                            background: url('~@/assets/images/resume/backEnd_active.png') no-repeat;
+                        }
+                    }
+                    &.item-analyze {
+                        &::before {
+                            background: url('~@/assets/images/resume/analyze_active.png') no-repeat;
+                        }
+                    }
+                }
+                .num {
+                    display: inline-block;
+                    padding: 0 5px;
+                    height: 16px;
+                    text-align: center;
+                    line-height: 16px;
+                    font-size: 12px;
+                    color: #fff;
+                    background-color: #FF5D1EFF;
+                    position: absolute;
+                    border-radius: 8px;
+                    right: 20px;
+                    top: 17px;
+                }
+                .nums {
+                    display: inline-block;
+                    padding: 0 5px;
+                    height: 16px;
+                    text-align: center;
+                    line-height: 16px;
+                    font-size: 12px;
+                    color: #fff;
+                    background-color: #B3B3B3;
+                    border-radius: 8px;
+                    position: absolute;
+                    right: 20px;
+                    top: 26px;
+                }
+            }
+            .title.active {
+                &::after {
+                    right: -30px;
+                }
+            }
+        }
+        .part-2 {
+            .title {
+                padding: 0 !important;
+                height: 46px !important;
+                line-height: 46px !important;
+                text-align: center;
+                font-weight: normal!important;
+                color: #1678F9 !important;
+            }
+        }
+        .part-1 {
+            margin-bottom: 20px;
+            position: relative;
+            // &::after {
+            //     content: '';
+            //     background: url('~@/assets/images/common/dashed.png') no-repeat;
+            //     background-size: 116px;
+            //     width: 116px;
+            //     height: 1px;
+            //     display: inline-block;
+            //     position: absolute;
+            //     top: 94px;
+            //     left: 54px;
+            // }
+            .title {
+                height: 56px;
+                line-height: 46px;
+                &::before {
+                    background: url('~@/assets/images/resume/thread.png') no-repeat;
+                    background-size: 19px;
+                }
+                &.active {
+                    &::before {
+                        background: url('~@/assets/images/resume/thread_active.png') no-repeat;
+                        background-size: 19px;
+                    }
+                    &::after {
+                        top: 13px;
+                        right: 0
+                    }
+                }
+            }
+        }
+        .part-2 {
+            .title {
+                padding: 0 0 12px 0;
+                margin-left: 0;
+                margin-bottom: 2px;
+                color: #323232;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+}

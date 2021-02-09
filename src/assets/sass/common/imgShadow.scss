@@ -1,0 +1,24 @@
+// img内外阴影
+@mixin imgShadow($width, $height, $radius, $shadow) {
+    display: inline-block;
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    position: relative;
+    img {
+        width: $width;
+        height: $height;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        width: $width;
+        height: $height;
+        background: url(~@/assets/images/resume/shadow_bg.png) no-repeat;
+        background-size: $width;
+        display: inline-block;
+    }
+}

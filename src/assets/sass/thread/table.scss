@@ -1,0 +1,25 @@
+.thread-table {
+    .el-table th,
+    .el-table tr {
+        font-size: 12px;
+    }
+    .img-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    .avatar-mess {
+        display: flex;
+        img {
+            object-fit: cover;
+        }
+        .right {
+            padding-left: 10px;
+            text-align: left;
+            .link-type {
+                display: block;
+            }
+        }
+    }
+}

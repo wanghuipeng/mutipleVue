@@ -1,0 +1,105 @@
+.menu {
+  float: left;
+  width: 180px;
+  height: 360px; // 304
+  background: #FFFFFF;
+  border-radius: 8px;
+  .menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+    .menu-item-icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 16px;
+    }
+    .menu-item-title {
+      font-size: 16px;
+      color: #4D4D4D;
+      line-height: 22px;
+    }
+    .menu-item-active {
+      width: 8px;
+      height: 24px;
+      text-align: center;
+      position: absolute;
+      right: 0;
+      top: -2px;
+    }
+    &:nth-child(1) .menu-item-icon {
+      background: url('~@/assets/images/order/all_order.png');
+      background-size: 20px 20px;
+    }
+    &:nth-child(2) .menu-item-icon {
+      background: url('~@/assets/images/order/recommend.png');
+      background-size: 20px 20px;
+    }
+    &:nth-child(3) .menu-item-icon {
+      background: url('~@/assets/images/order/interview.png');
+      background-size: 20px 20px;
+    }
+    &:nth-child(4) .menu-item-icon {
+      background: url('~@/assets/images/order/offer.png');
+      background-size: 20px 20px;
+    }
+    &:nth-child(5) .menu-item-icon {
+      background: url('~@/assets/images/order/entry.png');
+      background-size: 20px 20px;
+    }
+    &:nth-child(6) .menu-item-icon {
+      background: url('~@/assets/images/order/over_protection.png');
+      background-size: 20px 20px;
+    }
+    &:nth-child(7) .menu-item-icon {
+      background: url('~@/assets/images/order/fail.png');
+      background-size: 20px 20px;
+    }
+    &:nth-child(8) .menu-item-icon {
+      background: url('~@/assets/images/order/draft.png');
+      background-size: 20px 20px;
+    }
+    &.active {
+      .menu-item-title {
+        color: #1678F9;
+      }
+      &:nth-child(1) .menu-item-icon {
+        background: url('~@/assets/images/order/all_order_active.png');
+        background-size: 20px 20px;
+      }
+      &:nth-child(2) .menu-item-icon {
+        background: url('~@/assets/images/order/recommend_active.png');
+        background-size: 20px 20px;
+      }
+      &:nth-child(3) .menu-item-icon {
+        background: url('~@/assets/images/order/interview_active.png');
+        background-size: 20px 20px;
+      }
+      &:nth-child(4) .menu-item-icon {
+        background: url('~@/assets/images/order/offer_active.png');
+        background-size: 20px 20px;
+      }
+      &:nth-child(5) .menu-item-icon {
+        background: url('~@/assets/images/order/entry_active.png');
+        background-size: 20px 20px;
+      }
+      &:nth-child(6) .menu-item-icon {
+        background: url('~@/assets/images/order/over_protection_active.png');
+        background-size: 20px 20px;
+      }
+      &:nth-child(7) .menu-item-icon {
+        background: url('~@/assets/images/order/fail_active.png');
+        background-size: 20px 20px;
+      }
+      .menu-item-active {
+        background: url('~@/assets/images/order/active.png') no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+}

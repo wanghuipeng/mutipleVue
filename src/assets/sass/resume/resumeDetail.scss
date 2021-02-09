@@ -1,0 +1,1066 @@
+.resume-detail {
+    padding: 25px 20px;
+    background-color: #f9f9f9;
+    .projectExp,
+    .workExp,
+    .certInfo {
+        .edit-form {
+            .el-form-item__content {
+                width: initial !important;
+            }
+        }
+    }
+    .email-hidden {
+        .el-form-item__content {
+            max-width: 70%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    .avatar-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        vertical-align: middle;
+    }
+    .avatar-uploader {
+        display: inline-block;
+        margin-left: 8px;
+        .upload-avatar {
+            color: #1678F9;
+            font-size: 12px;
+        }
+    }
+    .jobIntent {
+        .el-form-item {
+            width: 100% !important;
+        }
+    }
+    .workExp,
+    .projectExp {
+        .text-form {
+            .el-form-item {
+                width: 100%;
+                .el-form-item__content {
+                    width: 645px;
+                }
+            }
+        }
+    }
+    .workExp,
+    .eduExp {
+        .part-1 {
+            position: relative;
+            span {
+                &:first-child {
+                    max-width: 200px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    display: inline-block;
+                }
+                &:last-child {
+                    position: absolute;
+                    left: 266px;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .eduExp {
+        .add-btn {
+            margin-top: 60px !important;
+        }
+        .text-form {
+            .item {
+                padding-bottom: 20px !important;
+                &:last-child {
+                    padding-bottom: 0px !important;
+                }
+            }
+        }
+    }
+    .projectExp {
+        .cont-1 {
+            .name {
+                max-width: 200px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                display: inline-block;
+            }
+            .time {
+                position: absolute;
+                left: 342px;
+            }
+        }
+    }
+    .salary-group {
+        .cheng {
+            color: #4d4d4d;
+            font-size: 19px;
+            position: absolute;
+            top: -7px;
+            left: 185px;
+        }
+        .el-input-group {
+            width: 170px;
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 0;
+            }
+            input {
+                width: 100px !important;
+            }
+        }
+        .el-radio-group {
+            overflow: hidden;
+            height: 26px !important;
+        }
+        .result-num {
+            color: #4d4d4d;
+            height: 28px;
+            line-height: 28px;
+            margin-left: -23px;
+        }
+    }
+    .email-link {
+        color: #1678f9;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline
+        }
+    }
+    .base-info .edit-form .el-date-editor .el-input__prefix {
+        left: inherit;
+    }
+    .text-form {
+        &.disabled {
+            position: relative;
+            &::before {
+                content: " ";
+                position: absolute;
+                left: 0;
+                top: 0px;
+                width: 101%;
+                height: 103%;
+                background: #fff;
+                opacity: 0.65;
+                z-index: 20;
+            }
+        }
+    }
+    .disabled {
+        position: relative;
+        &::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 0px;
+            width: 101%;
+            height: 103%;
+            background: #fff;
+            opacity: 0.65;
+            z-index: 20;
+        }
+    }
+    .add-btn-disabled {
+        position: relative;
+        &::before {
+            content: " ";
+            position: absolute;
+            left: -1px;
+            top: -1px;
+            width: 101%;
+            height: auto;
+            background: #fff;
+            opacity: 0.65;
+            z-index: 20;
+        }
+    }
+    .edit-disabled {
+        opacity: 0.65;
+        cursor: default !important;
+    }
+    .disabled-h3 {
+        position: relative;
+        &::before {
+            content: " ";
+            position: absolute;
+            left: -1px;
+            top: -1px;
+            width: 101%;
+            height: auto;
+            background: #fff;
+            opacity: 0.65;
+            z-index: 20;
+        }
+    }
+    .dot-i {
+        width: 3px;
+        height: 3px;
+        display: inline-block;
+        background-color: #eee;
+        margin: 0 8px;
+        border-radius: 10px;
+        vertical-align: 3px;
+    }
+    .text-overflow-200 {
+        .el-form-item__content {
+            width: 200px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+    // 重置必填提示*
+    .el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap>.el-form-item__label:before,
+    .el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:before {
+        left: -10px;
+        color: #FF5D1E;
+        position: absolute;
+    }
+    .min-h-380 {
+        min-height: 380px !important;
+    }
+    .min-h-690 {
+        min-height: 690px !important;
+    }
+    .min-h-1160 {
+        min-height: 1160px !important;
+    }
+    .edit-form {
+        padding-left: 10px;
+        .el-date-editor {
+            .el-icon-date {
+                font-family: 'iconfont' !important;
+                font-size: 16px;
+                font-style: normal;
+                -webkit-font-smoothing: antialiased;
+                line-height: 27px;
+                &::before {
+                    content: '\e62b';
+                    color: #1678f9;
+                }
+            }
+            .el-input__prefix {
+                background-color: #eee;
+                border-left: 1px solid #e5e5e5;
+                width: 60px;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                top: 0.5px !important;
+                height: 27px;
+                right: 21px !important;
+            }
+        }
+        .diy-select {
+            width: 200px;
+            .el-icon-caret-bottom {
+                right: 12px;
+                top: 6px;
+            }
+            .el-icon-circle-close {
+                right: 6px;
+                top: 6px;
+            }
+        }
+        .btns {
+            width: 100% !important;
+            margin-top: 20px;
+            text-align: center;
+            &.btns-thin {
+                button {
+                    margin: 0 9px;
+                }
+            }
+            button {
+                margin: 0 49px;
+                border-radius: 4px;
+                font-size: 16px;
+                height: 30px;
+                line-height: 30px;
+                width: 80px;
+                padding: 0;
+                &.el-button--default {
+                    color: #1678f9;
+                    border: 1px solid rgba(22, 120, 249, 1);
+                }
+                &.el-button--primary {
+                    background: rgba(22, 120, 249, 1);
+                    border-radius: 4px;
+                }
+                &.el-button--text {
+                    color: #979899;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .el-form-item {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+        .el-form-item__label {
+            line-height: 28px;
+            text-align: left;
+            color: #666;
+            position: relative;
+        }
+        .el-radio-group {
+            height: 22px;
+            margin-top: 5px;
+            overflow: hidden;
+            .el-radio {
+                margin-right: 20px;
+                overflow: hidden;
+            }
+            .el-radio__input.is-checked {
+                border: 3px solid #1678f9;
+                border-radius: 100%;
+                .el-radio__inner {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+            .el-radio__inner {
+                border-color: #eee;
+                width: 18px;
+                height: 18px;
+            }
+            .el-radio__input.is-checked .el-radio__inner {
+                border-color: #fff;
+                background: #fff;
+                border-radius: 100%;
+            }
+            .el-radio__inner::after {
+                background-color: #1678f9;
+                border-radius: 6px;
+                width: 6px;
+                height: 6px;
+            }
+            .el-radio__label {
+                font-size: 14px;
+                color: #4d4d4d;
+                vertical-align: middle;
+            }
+        }
+        .el-input__suffix {
+            top: 7px;
+            right: 11px;
+            .el-icon-arrow-up {
+                transition: transform 0.3s;
+                transform: rotate(0deg);
+                background: url('~@/assets/images/common/arrow.png') no-repeat;
+                background-size: 9px;
+                width: 10px;
+                height: 16px;
+                &::before {
+                    display: none;
+                }
+            }
+        }
+        .el-input {
+            height: 28px;
+            background-color: transparent;
+            &.w-100 {
+                .el-input__inner {
+                    width: 100px;
+                }
+            }
+            .el-input__inner {
+                padding: 0 12px;
+                width: 200px;
+                height: 28px;
+                line-height: 28px;
+                background-color: transparent;
+                color: #4d4d4d;
+                font-size: 14px;
+                border-color: #e5e5e5;
+            }
+        }
+        .el-textarea {
+            .el-input__count {
+                background-color: transparent;
+            }
+            .el-textarea__inner {
+                width: 644px;
+                resize: none;
+                height: 130px !important;
+                padding: 0 12px;
+                line-height: 28px;
+                background-color: transparent;
+                color: #4d4d4d;
+                font-size: 14px;
+                border-color: #e5e5e5;
+            }
+            .el-input__count {
+                bottom: -22px;
+                right: 0;
+            }
+        }
+    }
+    .jobIntent,
+    .eduExp,
+    .workExp,
+    .projectExp,
+    .trainExp,
+    .langPower,
+    .certInfo,
+    .selfEval,
+    .surplusInfo,
+    .myProduct {
+        .edit-form {
+            .el-form-item {
+                width: 100%;
+                margin-right: 0;
+                input {
+                    width: 644px;
+                }
+                .diy-select {
+                    width: 644px;
+                }
+            }
+        }
+    }
+    .eduExp,
+    .workExp,
+    .projectExp,
+    .trainExp,
+    .langPower,
+    .certInfo,
+    .selfEval,
+    .myProduct {
+        .edit-form {
+            .el-form-item {
+                margin-bottom: 20px;
+                &.start-date {
+                    display: inline-block;
+                    width: 350px;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        width: 14px;
+                        height: 1px;
+                        background-color: #4d4d4d;
+                        position: absolute;
+                        display: inline-block;
+                        top: 13px;
+                        right: 18px;
+                    }
+                    input {
+                        width: 200px;
+                    }
+                }
+                &.end-date {
+                    display: inline-block;
+                    width: 350px;
+                    position: relative;
+                    input {
+                        width: 200px;
+                    }
+                }
+                .el-date-editor {
+                    .el-input__prefix {
+                        right: 20px;
+                        left: inherit;
+                        top: -6px;
+                    }
+                }
+            }
+        }
+        .text-form {
+            .item {
+                // max-height: 300px;
+            }
+        }
+    }
+    .certInfo {
+        .el-form-item {
+            &.start-date {
+                display: inline-block;
+                width: 350px;
+                position: relative;
+                &::after {
+                    display: none !important;
+                }
+                input {
+                    width: 200px;
+                }
+            }
+        }
+    }
+    .workExp {
+        .text-suffix {
+            .el-input__suffix {
+                top: 1px;
+            }
+        }
+    }
+    .selfEval,
+    .surplusInfo {
+        .el-form-item__label {
+            width: 80px !important;
+            margin-right: 8px;
+            text-align: right !important;
+            margin-left: -14px;
+            text-align: right !important;
+        }
+        .el-textarea__inner {
+            width: 670px !important;
+        }
+    }
+    .myProduct {
+        a {
+            text-decoration: none;
+            color: #1678f9;
+            font-size: 14px;
+        }
+        .product-url {
+            .el-input-group__prepend {
+                background-color: transparent;
+                border-right: 0;
+                padding: 0 12px;
+            }
+            .el-input__inner {
+                width: 579px !important;
+            }
+        }
+        .upload-file {
+            button {
+                font-size: 16px;
+                border-radius: 4px;
+                width: 134px;
+                height: 30px;
+                padding: 0;
+                background-color: #1678F9;
+            }
+            .tip {
+                font-size: 14px;
+                color: #4d4d4d;
+            }
+        }
+    }
+    .header {
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 15px;
+        .left-part {
+            float: left;
+            span {
+                font-size: 14px;
+                color: #989898;
+                margin-right: 40px;
+            }
+        }
+        .right-part {
+            float: right;
+            .el-input__inner {
+                padding-right: 20px;
+            }
+            .el-select__caret {
+                transform: none;
+                position: relative;
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    background: url('~@/assets/images/resume/arrow.png') no-repeat;
+                    background-size: 7px;
+                    width: 7px;
+                    height: 12px;
+                    vertical-align: middle;
+                }
+            }
+            .el-input__inner {
+                border-color: #1678f9;
+                width: 100px;
+                height: 30px;
+                border-radius: 15px;
+                font-size: 14px;
+                color: #1678f9;
+            }
+            button {
+                border-radius: 15px;
+                margin-left: 20px;
+                border-color: #1678f9;
+                font-size: 14px;
+                width: 100px;
+                height: 30px;
+                padding: 0;
+                color: #1678f9;
+                &.recommend-btn {
+                    color: #fff;
+                    background-color: #1678f9;
+                }
+            }
+        }
+    }
+    .labels {
+        clear: both;
+        span {
+            border: 1px solid #1678f9;
+            font-size: 12px;
+            color: #1678f9;
+            padding: 0 4px;
+            height: 17px;
+            line-height: 17px;
+            margin-right: 20px;
+            &.add-labels {
+                color: #ea2b3f;
+                border-color: #ea2b3f;
+            }
+        }
+    }
+    .base-info {
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 20px 20px 5px 20px;
+        box-sizing: border-box;
+        h3 {
+            margin-bottom: 20px;
+            color: #333333;
+            font-size: 16px;
+            font-weight: 600;
+            position: relative;
+            .edit {
+                cursor: pointer;
+                color: #808080;
+                font-size: 14px;
+                font-weight: normal;
+                position: absolute;
+                z-index: 10;
+                right: 0;
+                &::before {
+                    content: '';
+                    width: 16px;
+                    height: 16px;
+                    display: inline-block;
+                    background: url('~@/assets/images/resume/icon_edit.png') no-repeat;
+                    background-size: 16px;
+                    vertical-align: -3px;
+                    margin-right: 3px;
+                }
+            }
+        }
+        .text-form {
+            border-bottom: 1px solid #eee;
+            .avatar {
+                top: 5px;
+            }
+        }
+    }
+    .edit-form {
+        .el-form-item {
+            &.mini-orange-dot {
+                .el-form-item__label {
+                    position: relative;
+                    &::before {
+                        color: #FF5D1E;
+                        content: "*";
+                        font-size: 14px;
+                        display: inline-block;
+                        position: absolute;
+                        left: -10px;
+                        top: -2px;
+                    }
+                }
+            }
+        }
+    }
+    .text-form {
+        position: relative;
+        .avatar {
+            width: 40px;
+            height: 40px;
+            background-color: transparent;
+            border-radius: 100%;
+            display: inline-block;
+            position: absolute;
+            top: 22px;
+        }
+        .disabled {
+            .avatar {
+                top: 0px;
+            }
+        }
+        .el-form-item {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+            width: 45%;
+            &.mini-orange-dot {
+                .el-form-item__label {
+                    color: #FF5D1E;
+                    position: relative;
+                    &::before {
+                        content: "*";
+                        font-size: 14px;
+                        display: inline-block;
+                        position: absolute;
+                        left: -10px;
+                        top: -2px;
+                    }
+                    &::after {
+                        content: "\5fc5\586b\9879";
+                        font-size: 14px;
+                        width: 100px;
+                        display: inline-block;
+                        position: absolute;
+                        left: 85px;
+                        top: -1px;
+                    }
+                }
+                &.no-text {
+                    .el-form-item__label {
+                        color: #666;
+                        &::before {
+                            color: #FF5D1E;
+                        }
+                        &::after {
+                            content: "";
+                        }
+                    }
+                }
+            }
+            .el-form-item__label {
+                text-align: left;
+                font-size: 14px;
+                color: #666;
+                line-height: 26px;
+            }
+            .el-form-item__content {
+                line-height: 24px;
+                padding: 2px 0;
+                white-space: pre-line;
+            }
+        }
+        .pl {
+            padding-left: 80px;
+            display: inline-block;
+        }
+    }
+    .resume-mess {
+        border-radius: 8px;
+        background-color: #fff;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        box-sizing: border-box;
+        &>div {
+            border-bottom: 1px solid #eee;
+            margin-bottom: 40px;
+            &:last-child {
+                border-bottom: none;
+                margin-bottom: 0px;
+            }
+        }
+        .add-btn {
+            border: 1px dashed #1678f9;
+            border-radius: 1px;
+            height: 42px;
+            line-height: 42px;
+            color: #1678f9;
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 39px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+            &:hover {
+                background-color: rgba(22, 120, 249, 0.1);
+            }
+        }
+        h3 {
+            margin-bottom: 20px;
+            color: #333333;
+            font-size: 16px;
+            font-weight: 600;
+            position: relative;
+            .edit {
+                cursor: pointer;
+                color: #808080;
+                font-size: 14px;
+                font-weight: normal;
+                position: absolute;
+                z-index: 10;
+                right: 0;
+                &::before {
+                    content: '';
+                    width: 16px;
+                    height: 16px;
+                    display: inline-block;
+                    background: url('~@/assets/images/resume/icon_edit.png') no-repeat;
+                    background-size: 16px;
+                    vertical-align: -3px;
+                    margin-right: 3px;
+                }
+            }
+        }
+        .eduExp,
+        .workExp,
+        .projectExp,
+        .trainExp,
+        .langPower,
+        .certInfo,
+        .surplusInfo,
+        .myProduct {
+            .text-form {
+                li,
+                .item {
+                    padding: 20px 0;
+                    width: auto;
+                    background-color: transparent;
+                    border-radius: 0;
+                    border: none;
+                    border-bottom: 1px dashed #eee;
+                    position: relative;
+                    margin-bottom: 0;
+                    line-height: 22px;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    .avatar {
+                        width: 48px;
+                        height: 48px;
+                    }
+                    .edit {
+                        cursor: pointer;
+                        color: #808080;
+                        font-size: 14px;
+                        position: absolute;
+                        z-index: 10;
+                        right: 0;
+                        &::before {
+                            content: '';
+                            width: 16px;
+                            height: 16px;
+                            display: inline-block;
+                            background: url('~@/assets/images/resume/icon_edit.png') no-repeat;
+                            background-size: 16px;
+                            vertical-align: -3px;
+                            margin-right: 3px;
+                        }
+                    }
+                    .cont {
+                        padding-left: 75px;
+                        .part-1,
+                        .part-2 {
+                            font-size: 14px;
+                            margin: 4px 0;
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .workExp,
+    .projectExp,
+    .trainExp,
+    .langPower,
+    .certInfo,
+    .selfEval,
+    .surplusInfo,
+    .myProduct {
+        .cont-1 {
+            padding-left: 75px;
+            color: #333;
+            font-size: 14px;
+            .part-1,
+            .part-2 {
+                font-size: 14px;
+                margin: 4px 0;
+                color: #333;
+                height: 22px;
+            }
+        }
+        .cont-2 {
+            margin-top: 20px;
+            li {
+                border: none !important;
+                padding: 10px 0 !important;
+            }
+            label {
+                color: #666;
+                font-size: 14px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 20px;
+                width: 56px;
+            }
+            span {
+                display: inline-block;
+                font-size: 14px;
+                color: #333;
+                width: 674px;
+                white-space: pre-line;
+                line-height: 24px;
+            }
+        }
+    }
+    .projectExp,
+    .trainExp,
+    .langPower,
+    .certInfo,
+    .selfEval,
+    .surplusInfo,
+    .myProduct {
+        .cont-1 {
+            padding-left: 0 !important;
+            position: relative;
+            span:first-child {
+                margin-right: 156px;
+                word-break: break-all;
+                white-space: pre-line;
+                line-height: 24px;
+            }
+            .edit {
+                cursor: pointer;
+                color: #808080;
+                font-size: 14px;
+                position: absolute;
+                right: 0;
+                z-index: 10;
+                &::before {
+                    content: '';
+                    width: 16px;
+                    height: 16px;
+                    display: inline-block;
+                    background: url('~@/assets/images/resume/icon_edit.png') no-repeat;
+                    background-size: 16px;
+                    vertical-align: -3px;
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+    .projectExp,
+    .trainExp,
+    .langPower,
+    .certInfo,
+    .selfEval,
+    .surplusInfo,
+    .myProduct {
+        .text-form {
+            margin-bottom: 20px;
+            &:first-child {
+                margin-bottom: 0;
+            }
+            .cont-2 {
+                padding-bottom: 20px;
+            }
+            .item-inner {
+                padding-top: 20px;
+                border-bottom: 1px dashed #eee;
+                &:last-child {
+                    border: none;
+                }
+                &:first-child {
+                    padding-top: 0px;
+                }
+            }
+        }
+    }
+    .trainExp {
+        .cont-1 {
+            span:first-child {
+                margin-right: 5px;
+                max-width: 100px;
+                overflow: hidden;
+                display: inline-block;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .time {
+                position: absolute;
+                left: 342px;
+                top: 3px
+            }
+            .train-comp {
+                width: 200px;
+                overflow: hidden;
+                display: inline-block;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+        .cont-2 {
+            padding-bottom: 0 !important;
+        }
+    }
+    .langPower {
+        .cont-1 {
+            padding-bottom: 20px;
+        }
+    }
+    .certInfo {
+        .cont-2 {
+            margin-top: 10px;
+        }
+    }
+    .myProduct {
+        .text-form {
+            margin-bottom: 0;
+            .cont-2 {
+                margin: 0;
+                padding: 0;
+                li {
+                    span {
+                        color: #1678f9;
+                    }
+                    .btns {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        span,
+                        a {
+                            width: auto;
+                            color: #808080;
+                            margin-left: 20px;
+                            cursor: pointer;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .download {
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    background: url('~@/assets/images/resume/icon_download.png') no-repeat;
+                    background-size: 16px;
+                    width: 16px;
+                    height: 16px;
+                    vertical-align: -2px;
+                    margin-right: 3px;
+                }
+            }
+            .delete {
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    background: url('~@/assets/images/resume/icon_delete.png') no-repeat;
+                    background-size: 16px;
+                    width: 16px;
+                    height: 16px;
+                    vertical-align: -2px;
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+}
+
+.item-dropdown-btn {
+    border: none;
+    text-align: center;
+    width: 97px;
+    padding: 8px 0px;
+    box-sizing: border-box;
+    font-size: 14px;
+    &:hover {
+        background: transparent;
+    }
+}

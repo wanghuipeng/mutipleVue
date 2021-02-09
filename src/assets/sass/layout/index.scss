@@ -1,0 +1,343 @@
+.wrapper {
+    min-width: 1200px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    /*公共头部*/
+    .header-common {
+        width: 100%;
+        position: relative;
+        background-color: #fff;
+        height: 44px;
+        .user-name {
+            color: #666666;
+            font-size: 14px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .el-header {
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 44px !important;
+            padding: 0 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+            transition: all 0.5s;
+            .logo {
+                height: auto;
+                line-height: 44px;
+                font-size: 20px;
+                color: #fff;
+                cursor: pointer;
+                position: absolute;
+                left: 20px;
+                z-index: 100;
+                img {
+                    width: 120px;
+                    height: 28px;
+                }
+            }
+            .nav {
+                flex: auto;
+                padding: 0;
+                background-color: #fff !important;
+                border-bottom: none;
+                height: 44px;
+                margin-left: 234px;
+                .notice-num {
+                    padding: 2px 5px;
+                    background-color: #EA2B3F;
+                    border-radius: 9px;
+                    display: inline-block;
+                    color: #fff;
+                    height: 17px;
+                    line-height: 13px;
+                    text-align: center;
+                    font-size: 12px;
+                    position: absolute;
+                    right: 16px;
+                    top: 13px;
+                    box-sizing: border-box;
+                }
+                .el-menu-item {
+                    transition: all linear .2s;
+                    position: relative;
+                    height: 44px;
+                    line-height: 44px;
+                    background-color: #fff !important;
+                    font-size: 14px;
+                    padding: 0 14px;
+                    color: #8D9299;
+                    border: none;
+                    &.is-active {
+                        font-weight: 600;
+                        color: #1678F9;
+                        &:after {
+                            content: "";
+                            width: 28px;
+                            height: 2px;
+                            border-radius: 2px;
+                            display: inline-block;
+                            background: #1678F9;
+                            position: absolute;
+                            bottom: 0px;
+                            left: 50%;
+                            margin-left: -14px;
+                        }
+                        .notice-num {
+                            font-weight: normal;
+                        }
+                    }
+                    &:hover {
+                        color: #1678F9;
+                    }
+                    &:first-child {
+                        padding-left: 3px;
+                        &.is-active {
+                            &:after {
+                                margin-left: -20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .upload-text {
+                font-size: 14px;
+                color: #fff;
+                margin-right: 28px;
+                cursor: pointer;
+            }
+            .me {
+                line-height: 44px;
+                display: flex;
+                align-items: center;
+                margin-right: 4px;
+                .upload-resume {
+                    cursor: pointer;
+                    font-size: 16px;
+                    color: #0E68F7;
+                    position: relative;
+                    margin-right: 40px;
+                    &::before {
+                        content: "";
+                        width: 20px;
+                        height: 20px;
+                        background-size: 20px;
+                        display: inline-block;
+                        vertical-align: -4px;
+                        margin-right: 3px;
+                        background: url('~@/assets/images/layout/resume.png') no-repeat;
+                        background-size: 20px;
+                    }
+                }
+                img {
+                    cursor: pointer;
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 100%;
+                    vertical-align: middle;
+                    object-fit: cover;
+                }
+            }
+            .recommend-candidate-nav {
+                width: 240px;
+                height: 100%;
+                position: absolute;
+                right: 20px;
+                .nav-pic {
+                    display: block;
+                    width: 200px;
+                    margin: 0 auto;
+                    padding: 1px 0;
+                }
+                .nav-des {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 12px;
+                    color: #1678f9;
+                }
+            }
+        }
+    }
+    /*公共主区域*/
+    .main-common {
+        background-color: rgb(247, 247, 247);
+        .el-main {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+    }
+    .admin-main {
+        background-color: rgb(247, 247, 247);
+        border-radius: 4px;
+        padding: 16px 16px 0 16px;
+        .main-body {
+            margin: 0 auto;
+            padding: 0 16px;
+            background: #fff;
+            border-radius: 4px;
+            // border: 1px solid #dfdada;
+        }
+    }
+    /*公共底部*/
+    .footer-common {
+        width: 100%;
+        background-color: #F7F7F7;
+        text-align: center;
+        .el-footer {
+            padding: 0;
+            width: 1200px;
+            line-height: 44px;
+            height: 44px !important;
+            margin: 0 auto;
+            color: #7F7F7F;
+            font-size: 14px;
+            position: relative;
+            .right {
+                position: absolute;
+                top: 0;
+                right: 0;
+                li {
+                    display: inline-block;
+                    margin-left: 12px;
+                    position: relative;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline;
+                        color: #0E68F7;
+                    }
+                    &:first-child::before {
+                        display: none;
+                    }
+                    &::before {
+                        content: "";
+                        display: inline-block;
+                        height: 12px;
+                        width: 1px;
+                        background-color: #fff;
+                        position: absolute;
+                        top: 24px;
+                        left: -6px;
+                    }
+                }
+            }
+        }
+    }
+    /*登录头部*/
+    .login-header {
+        width: 100%;
+        height: 450px;
+        background-color: #1678f9;
+        .header-main {
+            width: 1200px;
+            height: 44px;
+            text-indent: 10px;
+            line-height: 44px;
+            font-size: 38px;
+            font-weight: normal;
+            color: rgba(255, 255, 255, 1);
+            font-style: italic;
+            margin: 0 auto;
+            img {
+                width: 130px;
+                padding-top: 8px;
+                height: auto;
+                cursor: pointer;
+                margin-left: -10px;
+            }
+        }
+    }
+    /*登录主区域*/
+    .login-main {
+        width: 100%;
+        height: 900px;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        .main-body {
+            width: 1200px;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    /*登录底部*/
+    .login-footer {
+        width: 100%;
+        height: 450px;
+        background-color: #fff;
+        position: relative;
+        .footer-main {
+            width: 1200px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(101, 101, 101, 1);
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            margin-left: -600px;
+        }
+    }
+    /*招聘会主区域*/
+    .jobfair-main {
+        .main-body {}
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .header-common {
+        .el-header .nav {
+            min-width: 760px;
+            .el-menu-item {
+                padding: 0 10px !important;
+                &:first-child {
+                    &.is-active {
+                        &:after {
+                            margin-left: -14px !important;
+                        }
+                    }
+                }
+            }
+        }
+        .notice {
+            width: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header-common {
+        .el-header .nav {
+            min-width: 760px;
+            margin-left: 15% !important;
+            .el-menu-item {
+                padding: 0 7px !important;
+                &:first-child {
+                    &.is-active {
+                        &:after {
+                            margin-left: -14px !important;
+                        }
+                    }
+                }
+            }
+        }
+        .notice {
+            width: 30px;
+        }
+    }
+}

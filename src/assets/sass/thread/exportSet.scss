@@ -1,0 +1,25 @@
+.export-set {
+    .el-dialog__body {
+        padding: 15px 20px;
+    }
+    .el-checkbox-group {
+        margin-left: -15px;
+    }
+    .el-checkbox {
+        margin: 8px 15px;
+        width: 138px;
+    }
+    .dialog-footer {
+        .el-form {
+            float: left;
+        }
+        .el-form-item__content {
+            width: 220px;
+            float: left;
+            margin-left: 0 !important;
+            input {
+                width: 100%
+            }
+        }
+    }
+}

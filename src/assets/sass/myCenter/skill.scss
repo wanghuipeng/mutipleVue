@@ -1,0 +1,108 @@
+.my-center-page .skill-page {
+    overflow: hidden;
+    padding: 40px;
+    box-sizing: border-box;
+    .el-checkbox-group {
+        display: inline-block;
+        .el-checkbox {
+            margin-right: 20px;
+            font-size: 14px;
+            color: #B2B2B2;
+            margin-top: 4px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .el-checkbox__label {
+            padding-left: 7px;
+        }
+        .el-checkbox__inner {
+            width: 18px;
+            height: 18px;
+        }
+        .el-checkbox__inner::after {
+            top: 3px;
+            left: 6px;
+        }
+    }
+    .checkbox-group {
+        margin-bottom: 0;
+        .el-form-item__content {
+            height: 26px;
+            line-height: 26px;
+            vertical-align: middle;
+            .el-checkbox__label {
+                vertical-align: middle;
+            }
+        }
+    }
+    .el-input__suffix {
+        top: 10px;
+        right: 12px;
+        .el-icon-arrow-up {
+            transition: transform 0.3s;
+            transform: rotate(0deg);
+            background: url('~@/assets/images/common/arrow.png') no-repeat;
+            background-size: 9px;
+            width: 10px;
+            height: 16px;
+            &::before {
+                display: none;
+            }
+        }
+    }
+    .diy-select {
+        .diy-input {
+            input {
+                font-size: 14px;
+                color: #343434;
+                padding: 0 13px;
+            }
+        }
+        .el-icon-caret-bottom {
+            right: -8px;
+            top: 10px;
+        }
+        .el-icon-circle-close {
+            right: -13px;
+            top: 8px;
+        }
+    }
+    .tip {
+        font-size: 14px;
+        color: #4d4d4d;
+    }
+    .el-form {
+        width: 420px;
+        margin: 30px auto 0 auto;
+        .el-form-item {
+            display: inline-block;
+            margin: 10px 0;
+            input {
+                width: 340px;
+                height: 34px;
+                border-radius: 4px;
+                border: 1px solid rgba(229, 229, 229, 1);
+                line-height: 34px;
+            }
+            .el-select {
+                width: 100%;
+            }
+            .el-form-item__label {
+                text-align: left;
+                font-size: 14px;
+                color: #B2B2B2;
+                line-height: 34px;
+            }
+        }
+    }
+    .save-btn {
+        width: 340px;
+        height: 44px;
+        background: rgba(22, 120, 249, 1);
+        border-radius: 4px;
+        font-size: 18px;
+        font-weight: 600;
+        margin: 17px 0 0 80px;
+    }
+}

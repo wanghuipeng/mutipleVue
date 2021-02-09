@@ -1,0 +1,408 @@
+// 简历列表
+@import '@/assets/sass/common/imgShadow.scss';
+.resume-page {
+    .batch-operate {
+        display: flex;
+        padding: 0 16px 20px;
+        align-items: center;
+        background-color: #fff;
+        &.isFixed{
+            top: 44px;
+            left: 254px;
+            right: 16px;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .operate-text {
+            font-size: 14px;
+            color: #8D9299;
+            margin-right: 25px;
+        }
+        .operate-btn {
+            .el-button {
+                margin-right: 16px;
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .table-header {
+        padding: 0 64px 15px 86px;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        .check-all {
+            position: absolute;
+            left: 41px;
+            top: 1px;
+            .el-checkbox__inner {
+                width: 18px;
+                height: 18px;
+                &::after {
+                    left: 6px;
+                    top: 3px;
+                }
+            }
+        }
+        .header-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .main-item {
+                width: 88px;
+                text-align: center;
+                font-size: 14px;
+                color: #282C32;
+            }
+        }
+    }
+    .el-checkbox-group {
+        padding: 0 20px;
+        .el-checkbox {
+            width: 100%;
+            box-sizing: border-box;
+            padding-left: 60px;
+            padding-right: 20px;
+            margin: 0;
+            border-bottom: 1px solid #eee;
+            .el-checkbox__input {
+                position: absolute;
+                left: 21px;
+                top: 50%;
+                margin-top: -9px;
+            }
+            .el-checkbox__inner {
+                width: 18px;
+                height: 18px;
+                &::after {
+                    left: 6px;
+                    top: 3px;
+                }
+            }
+            .el-checkbox__label {
+                display: block;
+                padding: 0;
+            }
+        }
+    }
+    .no-dot {
+        span {
+            &::before {
+                display: none;
+            }
+        }
+    }
+    .el-pagination {
+        padding: 40px 5px;
+        text-align: center;
+        // .btn-prev,
+        // .btn-next {
+        //     width: 32px;
+        //     height: 32px;
+        //     line-height: 32px;
+        //     background-color: #EDEDED;
+        //     .el-icon {
+        //         color: #CCCCCC;
+        //         font-size: 20px;
+        //         font-weight: normal;
+        //     }
+        // }
+        // .btn-prev {
+        //     background-color: #EEEEEE;
+        // }
+        // .el-pager li {
+        //     margin: 0 10px;
+        //     width: 32px;
+        //     font-weight: normal;
+        //     height: 32px;
+        //     line-height: 32px;
+        //     color: #808080;
+        //     font-size: 19px;
+        //     background-color: #EDEDED;
+        //     border-radius: 0;
+        //     &.active {
+        //         background-color: #1678F9 !important;
+        //         color: #fff;
+        //     }
+        // }
+        // .is-background .el-pager li.disabled {
+        //     color: #ccc;
+        // }
+    }
+    .el-button {
+        width: 92px;
+        height: 28px;
+        border-radius: 2px;
+        font-size: 14px;
+        line-height: 28px;
+        border-color: #E9EDF1;
+        color: #282C32;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .el-button--primary {
+        color: #fff;
+        background: #1678F9;
+    }
+    .right-content {
+        .list-part {
+            min-height: 500px;
+            background-color: #fff;
+            .item {
+                box-sizing: border-box;
+                display: flex;
+                padding: 20px;
+                position: relative;
+                min-height: 98px;
+                background: rgba(255, 255, 255, 1);
+                transition: .3s ease-in-out;
+                -webkit-transition: .3s ease-in-out;
+                -moz-transition: .3s ease-in-out;
+                -ms-transition: .3s ease-in-out;
+                -o-transition: .3s ease-in-out;
+                // &:hover {
+                //     box-shadow: 2px 4px 30px 0 rgba(0, 0, 0, 0.07);
+                // }
+                .check {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 34px;
+                    left: 20px;
+                    width: 32px;
+                    height: 32px;
+                    display: inline-block;
+                    background: url('~@/assets/images/resume/check.png') no-repeat;
+                    background-size: 32px;
+                    &.active {
+                        background: url('~@/assets/images/resume/check_active.png') no-repeat;
+                        background-size: 32px;
+                    }
+                }
+                .item-img {
+                    flex: none;
+                    display: inline-block;
+                    vertical-align: top;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 100%;
+                        margin: 5px 20px 0 0px;
+                        object-fit: cover;
+                    }
+                    // @include imgShadow(80px,
+                    // 80px,
+                    // 8px,
+                    // 1px 2px 6px 0px rgba(0,
+                    // 0,
+                    // 0,
+                    // 0.2));
+                }
+                .item-cont {
+                    flex: auto;
+                    margin-top: 5px;
+                    width: 650px;
+                    display: inline-block;
+                    .part-1 {
+                        .name {
+                            width: auto;
+                            height: 21px;
+                            line-height: 21px;
+                            color: #323232;
+                            font-size: 16px;
+                            font-weight: 600;
+                            border: none;
+                            &:hover {
+                                color: #1678F9;
+                                text-decoration: underline;
+                            }
+                        }
+                        .label {
+                            height: 17px;
+                            line-height: 17px;
+                            font-size: 12px;
+                            border: 1px solid #F8A53A;
+                            border-radius: 2px;
+                            padding: 0 4px;
+                            display: inline-block;
+                            margin-left: 12px;
+                            vertical-align: 2px;
+                            color: #F8A53A;
+                            vertical-align: 1px;
+                        }
+                    }
+                    .part-2 {
+                        margin-top: 4px;
+                        .label {
+                            font-size: 14px;
+                            color: #595F66;
+                            margin-right: 20px;
+                            position: relative;
+                            &::before {
+                                content: ".";
+                                font-size: 26px;
+                                color: #595F66;
+                                position: absolute;
+                                right: -13px;
+                                top: -8px;
+                            }
+                            &:last-child {
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    .part-3 {
+                        margin-top: 18px;
+                        .line {
+                            &::before {
+                                content: "";
+                                width: 100%;
+                                border-bottom: 1px dashed #B3B3B3;
+                                height: 1px;
+                                display: inline-block;
+                                position: absolute;
+                                top: 10px;
+                                left: 0;
+                                z-index: 1;
+                            }
+                        }
+                        p {
+                            font-size: 14px;
+                            color: #595F66;
+                            position: relative;
+                            min-height: 31px;
+                            span {
+                                display: inline-block;
+                                margin-bottom: 12px;
+                                padding-right: 20px;
+                                position: relative;
+                                z-index: 100;
+                                background-color: #fff;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                max-width: 175px;
+                                overflow: hidden;
+                                vertical-align: -16px;
+                                &::before {
+                                    content: ".";
+                                    font-size: 26px;
+                                    position: absolute;
+                                    right: 7px;
+                                    top: -8px;
+                                }
+                                &.name {
+                                    padding-right: 12px;
+                                    &::before {
+                                        display: none;
+                                    }
+                                }
+                            }
+                            label {
+                                padding-left: 12px;
+                                width: 250px;
+                                display: inline-block;
+                                text-align: left;
+                                z-index: 100;
+                                position: absolute;
+                                background-color: #fff;
+                                right: 0;
+                                span {
+                                    padding-left: 0 !important;
+                                }
+                                span::before,
+                                span::after {
+                                    display: none !important;
+                                }
+                            }
+                        }
+                        .work-exp {
+                            span:first-child {
+                                position: relative;
+                                padding-left: 30px;
+                                &::after {
+                                    margin-right: 12px;
+                                    content: "";
+                                    width: 20px;
+                                    height: 20px;
+                                    display: inline-block;
+                                    background: url('~@/assets/images/resume/job_list.png') no-repeat;
+                                    background-size: 20px;
+                                    position: absolute;
+                                    left: -2px;
+                                }
+                            }
+                            label {
+                                padding-left: 12px;
+                                width: 250px;
+                                display: inline-block;
+                                text-align: left;
+                                span {
+                                    padding-left: 0 !important;
+                                }
+                                span::before,
+                                span::after {
+                                    display: none !important;
+                                }
+                            }
+                        }
+                        .edu-exp {
+                            span:first-child {
+                                position: relative;
+                                padding-left: 30px;
+                                &::after {
+                                    margin-right: 12px;
+                                    content: "";
+                                    width: 20px;
+                                    height: 20px;
+                                    display: inline-block;
+                                    background: url('~@/assets/images/resume/college_list.png') no-repeat;
+                                    background-size: 20px;
+                                    position: absolute;
+                                    left: -2px;
+                                    top: 0px;
+                                }
+                            }
+                        }
+                    }
+                    .part-4{
+                        span{
+                            color: #1678F9;
+                            font-size: 11px;
+                            padding: 2px 8px;
+                            height: 18px;
+                            line-height: 18px;
+                            display: inline-block;
+                            background-color: #EBF3FF;
+                            margin-right: 8px;
+                            border-radius: 11px;
+                        }
+                    }
+                }
+                .item-btns {
+                    flex: none;
+                    display: flex;
+                    align-items: center;
+                    button {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.item-dropdown-btn {
+    border: none;
+    text-align: center;
+    line-height: 30px;
+    width: 97px;
+    padding: 3px 0px;
+    box-sizing: border-box;
+    font-size: 14px;
+    &:hover {
+        background: transparent;
+    }
+}
