@@ -27,6 +27,11 @@ export default new Router({
             component: notFound
         },
         {
+            path: '/demo/notFound',
+            name: 'notFound',
+            component: notFound
+        },
+        {
             path: '*',
             redirect: '/notFound'
         }

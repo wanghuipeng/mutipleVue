@@ -21,9 +21,7 @@ export default {
   methods: {
     toHome() {
       console.log('跨页面跳转')
-      window.location.href = '/home'
-      window.location.reload
-      // this.$router.push('/home')
+      window.location.replace('/home')
     }
   }
 }

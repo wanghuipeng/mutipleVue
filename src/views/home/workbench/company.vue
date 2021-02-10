@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <div class="header">
-      <div class="header-info">
+      <div class="header-info" @click="toDemo">
         <p class="name">{{ userInfo.nickName }}，{{ nowTime }}</p>
         <p>
           <span v-if="nowDate">{{ nowDate }} </span>
@@ -377,6 +377,9 @@ export default {
     this.getCharts()
   },
   methods: {
+    toDemo() {
+      window.location.replace('/demo/notFound')
+    },
     // 基本信息
     getInfo() {
       const params = {
