@@ -1,4 +1,4 @@
-测试入口如图：![https://upload-images.jianshu.io/upload_images/3127776-b32f28bc0875f3a8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp]()
+测试入口如图：![多页面跳转入口](https://upload-images.jianshu.io/upload_images/3127776-b32f28bc0875f3a8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp)
 
 
 # Dalie-PC-Web
