@@ -1,3 +1,6 @@
+测试入口如图：![https://upload-images.jianshu.io/upload_images/3127776-b32f28bc0875f3a8.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200/format/webp]()
+
+
 # Dalie-PC-Web
 ## 项目说明
 大猎英才猎头端（PC端）
@@ -107,5 +110,4 @@ npm run build
 
 ### 注意
 尽量少的引入第三方库，npm install时注意区分dependencies和devDependencies
-
 
