@@ -84,8 +84,8 @@ module.exports = {
     devServer: {
         proxy: {
             '/api': {
-                // target: 'https://h.dalieyingcai.com', // prod
-                target: 'https://hh.dalie.zpstar.com', // test
+                target: 'https://h.dalieyingcai.com', // prod
+                // target: 'https://hh.dalie.zpstar.com', // test
                 pathRewrite: {
                     '^/api': '/api'
                 }
