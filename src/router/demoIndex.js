@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 // 登录模块
-const notFound = r => require.ensure([], () => r(require('@/demo/views/notFound')), 'notFound')
+import notFound from '@/demo/views/notFound'
 
 Vue.use(Router)
 
