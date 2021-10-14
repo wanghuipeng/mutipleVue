@@ -4,6 +4,7 @@ import Router from 'vue-router'
 // 登录模块
 import notFound from '@/demo/views/notFound'
 
+
 Vue.use(Router)
 
 const originalPush = Router.prototype.push;

@@ -1,6 +1,8 @@
 // 参考文档地址：https://cli.vuejs.org/zh/config/
 const path = require('path');
 const TerserPlugin = require('terser-webpack-plugin')
+const config = require('./src/config/pageConfig.js')
+const projectName = process.env.PROJECT_NAME;
 
 function resolve(dir) {
     return path.join(__dirname, dir)
@@ -9,16 +11,7 @@ const CompressionWebpackPlugin = require('compression-webpack-plugin')
 const productionGzipExtensions = ['js', 'css']
 console.log('当前环境', process.env.NODE_ENV)
 module.exports = {
-    pages: { // 配置多页面入口
-        demo: {
-            entry: 'src/demo/demo.main.js',
-            template: 'public/demo.html'
-        },
-        index: {
-            entry: 'src/main.js',
-            template: 'public/index.html'
-        }
-    },
+    pages: projectName ? { index: config[projectName] } : config, // 打包时需要自定义文件名 启动不需要
     // alias 配置
     chainWebpack: (config) => {
         config.resolve.alias
@@ -72,7 +65,7 @@ module.exports = {
         }
     },
     publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
-    outputDir: 'dist',
+    outputDir: 'dist/' + projectName + '/', // 分开打包
     assetsDir: '',
     indexPath: 'index.html',
     filenameHashing: true,
@@ -82,6 +75,7 @@ module.exports = {
     productionSourceMap: false,
     integrity: false,
     devServer: {
+        index: 'index.html', //  默认启动页面
         proxy: {
             '/api': {
                 target: 'https://h.dalieyingcai.com', // prod
